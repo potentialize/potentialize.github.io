@@ -1,22 +1,23 @@
 # Site
-title:              Massively
-bio:                'Jekyll version of the Massively theme by HTML5UP'
-description:        "Jekyll version of the Massively theme by HTML5UP"
+title:              Potentialize
+bio:                TODO
+description:        TODO
 locale:             en_US
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: https://potentialize.github.io # the base hostname & protocol for your site
 
 defaults:
 - scope:
     path: ''
     type: posts
   values:
-    permalink: "/blog/:title/"
+    permalink: "/:title/"
     layout: post
-    author:
+    author: Bruno
+    comments: true
 
 # Jekyll
-permalink:          /blog/:title/
+permalink:          /:title/
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
@@ -31,19 +32,8 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   default
-
-# Social
-analytics-id:       "default"
-twitter:            default
-facebook:           default
-instagram:          default
-github:             default
-
-# personal
-location:           Los Angeles, CA
-phone:              310-318-5555
-email:              info@default.com
+disqus_shortname:   potentialize
+disqus_url: https://potentialize.github.io
 
 # Gems
 gems:

@@ -1,10 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-  Jekyll integration by somiibo.com
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
     {% include head.html %}
@@ -22,21 +16,16 @@
 
 
 				<!-- Nav -->
-					<nav id="nav">
+				<nav id="nav">
 
-            {% include nav.html %}
+          {% include nav.html %}
 
-						<ul class="icons">
-              <li><a href="https://twitter.com/{{site.twitter}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
-              <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
-              <li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
-              <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+				</nav>
 
 				<!-- Main -->
 				<div id="main">
 
+					{% comment %}
           <article class="post featured">
             <header class="major">
               <h2><a href="#">Importance of Blogs</a></h2>
@@ -55,6 +44,7 @@
 						</p>
 
           </article>
+					{% endcomment %}
 					<!-- Post -->
 					<section class="posts">
 						{% for post in site.posts %}

@@ -2,6 +2,8 @@
 # Jekyll sass enabled
 ---
 
+$background-image: '{{site.url}}/images/{{site.background_image}}';
+
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';

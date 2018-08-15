@@ -5,7 +5,7 @@ description:        TODO
 locale:             en_US
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://potentialize.github.io # the base hostname & protocol for your site
-background_image:   backgrounds/benjamin-voros-575800-unsplash.jpg
+background_image:   backgrounds/benjamin-voros-575800-unsplash_scaled.jpg
 
 defaults:
 - scope:

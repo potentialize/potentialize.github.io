@@ -183,7 +183,8 @@
 	#copyright {
 		@include color-typography(invert);
 		position: relative;
-		color: transparentize(_palette(invert, fg), 0.75);
+		color: transparentize(_palette(invert, fg), 0.30);
+		// color: _palette(invert, fg);
 		cursor: default;
 		font-family: _font(family-heading);
 		font-size: 0.8rem;
@@ -192,7 +193,7 @@
 		line-height: 1.5;
 		text-align: center;
 		text-transform: uppercase;
-		margin: (_size(padding) * 2) auto (_size(padding) * 4) auto;
+		margin: (_size(padding) * 3) auto (_size(padding) * 11) auto;
 		width: calc(100% - #{_size(padding) * 2});
 		max-width: _size(wrapper);
 		z-index: 2;

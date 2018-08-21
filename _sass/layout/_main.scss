@@ -26,6 +26,10 @@
 
 		> footer {
 			text-align: center;
+
+			// make sure pagination fits on medium bp
+			padding-left: 20px;
+			padding-right: 20px;
 		}
 
 		> .post {

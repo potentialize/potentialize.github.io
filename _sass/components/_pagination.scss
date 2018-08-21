@@ -69,7 +69,7 @@
 			}
 		}
 
-		@include breakpoint(xsmall) {
+		@include breakpoint(small) {
 			.page, .extra {
 				display: none;
 			}

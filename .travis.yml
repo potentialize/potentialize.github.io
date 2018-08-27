@@ -1,5 +1,12 @@
 language: ruby
 cache: bundler
-install: bundle install
+install: rake install
+before_script: rake prepare_build_destination
 script: rake build
-deploy: rake deploy
+after_success: rake deploy
+branches:
+  only:
+    - source
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true

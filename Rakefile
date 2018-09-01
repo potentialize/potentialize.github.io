@@ -21,6 +21,38 @@ task :dev do
   sh "bundle exec jekyll serve --livereload" # include deploy_path?
 end
 
+desc "Create a new post"
+task :newp do
+  title = ARGV
+    .drop(1)
+    .join(' ')
+
+  perma_title = title
+    .gsub(' ', '-')
+    .downcase
+
+  date = Time.now
+
+  file_name = "_posts/%s-%02d-%02d-%s.md" % [date.year, date.month, date.day, perma_title]
+
+  if File.file? file_name
+    puts "'#{file_name}' already exists! Aborting..."
+  else
+    post = File.new(file_name, 'w')
+    post.puts "---"
+    post.puts "excerpt: "
+    post.puts "image: /images/"
+    post.puts "---"
+    post.puts "\# #{title}"
+    post.close
+
+    puts "Successfully created '#{file_name}'"
+    puts "Have fun writing '#{title}'!"
+  end
+
+  exit
+end
+
 desc "Run bundle install"
 task :install do
   sh "bundle install"
